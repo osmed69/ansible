@@ -1,0 +1,12 @@
+[alpine]
+
+[debian]
+debian-13 ansible_host=192.168.50.129 ansible_user=ansible
+
+[rhel]
+rhel8 ansible_host=192.168.50.66 ansible_user=ansible
+rhel9 ansible_host=192.168.50.211 ansible_user=ansible
+rhel10 ansible_host=192.168.50.152 ansible_user=ansible
+rh7 ansible_host=192.168.50.51 ansible_user=ansible
+
+[ubuntu]

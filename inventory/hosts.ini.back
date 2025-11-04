@@ -1,0 +1,13 @@
+[redhatservers]
+rh7
+rh8
+rh9
+rh10
+
+[debianservers]
+mc
+k8s-ctlr
+k8s-node1
+k8s-node2
+
+[freebsdservers]
