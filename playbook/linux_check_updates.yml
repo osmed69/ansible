@@ -8,6 +8,4 @@
       when: ansible_os_family == 'RedHat'
       command: dnf history info last
       register: dnf_history
-
-    - debug:
-      var: dnf_history.stdout
+      
