@@ -1,0 +1,13 @@
+---
+- name: Check all Packages Updated during las DNF Update on RHEL Servers
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: View DNF Update history
+      when: ansible_os_family == 'RedHat'
+      command: dnf history info last
+      register: dnf_history
+
+    - debug:
+      var: dnf_history.stdout
