@@ -1,0 +1,4 @@
+- hosts: proxmox
+  tasks:
+    - name: Stop all Proxmox VMS that were Updated
+      ansible.builtin.script: /home/ansible/scripts/vms --some-argument stop
