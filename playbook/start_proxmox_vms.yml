@@ -1,0 +1,4 @@
+- hosts: proxmox
+  tasks:
+    - name: Start all Proxmox VMS that Need to be Updated
+      ansible.builtin.script: /home/ansible/scripts/vms --some-argument start
